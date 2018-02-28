@@ -54,7 +54,7 @@ Required background modes
             client.start()
             client.startListeningOnActiveConnection()
             
- # important Changes
+ # Important Changes
  do changes in build settings
  1) FRAMEWORK_SEARCH_PATHS = '$(SDKROOT)/System/Library/Frameworks', '.'
  2) OTHER_LDFLAGS = -ObjC ,-Xlinker ,-lc++
