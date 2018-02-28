@@ -53,7 +53,14 @@ Required background modes
 # STARTING THE SINCH CLIENT
             client.start()
             client.startListeningOnActiveConnection()
+            
+ # important Changes
+ do changes in build settings
+ 1) FRAMEWORK_SEARCH_PATHS = '$(SDKROOT)/System/Library/Frameworks', '.'
+ 2) OTHER_LDFLAGS = -ObjC ,-Xlinker ,-lc++
 
+
+And if you directly using Sinch.Framework instead of cocoa pods then just copy it in your framework library before adding in project. 
 
 To Update Sinch SDK in future :
 
